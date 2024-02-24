@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <title>Agatha's Couch</title>
+    <meta name="title" content="Agatha's Couch" />
+    <meta name="description" content="Appease the spirit!" />
+
+    <!-- Stylesheets & Scripts -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="whoa.css">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <script src="couch.js"></script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://agathascouch.github.io" />
+    <meta property="og:title" content="Agatha's Couch" />
+    <meta property="og:description" content="Appease the spirit!" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://agathascouch.github.io" />
+    <meta property="twitter:title" content="Agatha's Couch" />
+    <meta property="twitter:description" content="Appease the spirit!" />
+</head>
+
+<body>
+    <div class="flex column">
+        <div class="flex column" id="game" style="width: 100%">
+            <h1>Find ways to appease Agatha!</h1>
+
+            <img src="" alt="" class="section" id="agatha">
+
+            <div class="flex row section">
+                <button onclick="feed()">Feed</button>
+                <button onclick="placate()">Placate</button>
+                <button onclick="rearrange()">Rearrange</button>
+            </div>
+
+            <p id="warning"></p>
+
+            <div class="flex column section" style="width: 100%">
+                <h2>Agatha happiness meter</h2>
+
+                <div id="happiness_meter">
+                    <div id="happiness_meter_inner"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex column section" id="restart">
+            <p>Agatha is appeased!</p>
+            <button onclick="restart()">Restart?</button>
+        </div>
+    </div>
+</body>
+</html>
